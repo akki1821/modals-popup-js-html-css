@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+}
+body {
+  background-color: rgb(245, 237, 237);
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  
+}
+
+.modal_wrapper {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+ 
+}
+
+
+.btn_gray {
+  background-color: rgba(138, 4, 4, 0.877);
+  border: none;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.modal_container {
+  background: white;
+  width: 550px;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+
+  transition: all 0.5s ease-in-out;
+}
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal_container button.close:hover {
+  color: rgba(138, 4, 4, 0.877);
+}
+
+.modal_container button.close {
+  position: absolute;
+  right: 9px;
+  top: 10px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: auto;
+}
